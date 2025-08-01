@@ -14,7 +14,7 @@ const OleoScript = Oleo_Script_Swash_Caps({
 
 export default function NavBar({ onSelect }: { onSelect: (section: string) => void }) {
   return (
-    <div className="sticky top-0 z-20 flex space-y-3 items-center justify-center w-full py-12  px-18 overflow-visible">
+    <div className="sticky top-0 z-20 flex space-y-3 items-center justify-center w-full py-12 px-11 md:px-18 overflow-visible">
       <div
         className="pointer-events-none absolute left-0 top-0 w-full h-full backdrop-blur-xs"
         style={{
@@ -22,7 +22,7 @@ export default function NavBar({ onSelect }: { onSelect: (section: string) => vo
         }}
       />
       <div className={`${OleoScript.className} text-4xl font-bold relative self-start mr-auto z-10`}>DX</div>
-      <div className={`${SFPro.className} flex items-center space-x-10 z-10 `}>
+      <div className={`${SFPro.className} flex items-center space-x-5 md:space-x-10 z-10 `}>
         <button className="hover:underline" onClick={() => onSelect("portfolio")}>
           portfolio
         </button>

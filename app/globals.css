@@ -1,3 +1,8 @@
+/* Borderlands 2 style 3D border effect */
+.borderlands-3d {
+  box-shadow: 4px 4px 0 0 #ffe285, 7px 7px 0 0 #483d11;
+  border-radius: 1rem;
+}
 @import "tailwindcss";
 
 :root {
