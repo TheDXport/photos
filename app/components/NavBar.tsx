@@ -14,7 +14,7 @@ const OleoScript = Oleo_Script_Swash_Caps({
 
 export default function NavBar({ onSelect }: { onSelect: (section: string) => void }) {
     return (
-      <div className="sticky top-0 z-20 flex flex-col space-y-3 items-center justify-center bg-red-200 w-full py-14">
+      <div className="sticky top-0 z-20 flex flex-col space-y-3 items-center justify-center w-full py-14 bg-[#ede8d7]/15 backdrop-blur  ">
         <div className={`${OleoScript.className} text-4xl font-bold`}>
           DX
         </div>

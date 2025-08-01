@@ -32,7 +32,7 @@ export default function Page() {
   }
 
   return (
-    <div className="relative h-[1500px] font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+    <div className="relative h-[1500px] font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-16">
       <NavBar onSelect={handleSelect} />
       <div
         className={`transition-opacity duration-350 ${fade === 'in' ? 'opacity-100' : 'opacity-0'}`}
