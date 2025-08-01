@@ -21,3 +21,23 @@
 body {
   background: var(--background);
 }
+
+/* Custom Tailwind height utilities above h-96 */
+.h-112 {
+  height: 28rem;
+}
+.h-128 {
+  height: 32rem;
+}
+.h-144 {
+  height: 36rem;
+}
+.h-160 {
+  height: 40rem;
+}
+.h-192 {
+  height: 48rem;
+}
+.h-256 {
+  height: 64rem;
+}
