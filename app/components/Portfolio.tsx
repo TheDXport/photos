@@ -6,6 +6,7 @@ export default function Portfolio() {
       {/* Blue div*/}
       <div className="flex flex-col md:flex md:flex-row md:space-x-7 space-y-7 items-center justify-center w-full">
         <div className="flex flex-col space-y-7 md:space-y-5 items-center justify-center w-full">
+          <div></div>
           <Image
             src="/photos/andrewReading-2.png"
             alt="Portfolio Image"
