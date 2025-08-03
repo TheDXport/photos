@@ -6,25 +6,27 @@ const SFPro = localFont({
   src: "../../public/fonts/SFPro.ttf",
 });
 
+const SFBold = localFont({
+  src: "../../public/fonts/SFBold.ttf",
+});
+
 const OleoScript = Oleo_Script_Swash_Caps({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-oleo-script",
 });
 
+const charcoal = "#222222";
+
 export default function NavBar({ onSelect }: { onSelect: (section: string) => void }) {
   return (
-    <div className="sticky top-0 z-20 flex space-y-3 items-center justify-center w-full py-5 md:py-12 px-10 md:px-18 overflow-visible">
+    <div className="sticky top-0 z-20 flex space-y-3  items-center justify-center w-full py-5 md:py-12 px-10 md:px-12 overflow-visible bg-[#ede8d7]/15 backdrop-blur">
       <div
-        className="pointer-events-none absolute left-0 top-0 w-full h-full backdrop-blur-xs"
-        style={{
-          background: "linear-gradient(to bottom, rgba(237,232,215,0.6) 0%, rgba(237,232,215,0) 100% )",
-        }}
-      />
-      <div className={`${OleoScript.className} text-4xl font-bold flex items-center justify-center mr-auto z-10`}>
-        DX
+        className={`${SFBold.className} mr-auto relative text-11xl font-bold tracking-tighter text-[${charcoal}] flex items-center justify-center select-none`}>
+        XIN DONG
       </div>
-      <div className={`${SFPro.className} flex items-center space-x-5 md:space-x-10 z-10 justify-center`}>
+
+      <div className={`${SFPro.className} flex items-center space-x-5 md:space-x-16 z-10 justify-center text-xl`}>
         <button className="hover:underline" onClick={() => onSelect("portfolio")}>
           portfolio
         </button>

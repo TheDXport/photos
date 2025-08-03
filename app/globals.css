@@ -1,5 +1,12 @@
-/* Borderlands 2 style 3D border effect */
-.borderlands-3d {
+.borderlands-left {
+  box-shadow: 4px 4px 0 0 #ffe285, 7px 7px 0 0 #483d11;
+  border-radius: 1rem;
+}
+.borderlands-center {
+  box-shadow: 4px 4px 0 0 #ffe285, 0px 7px 0 0 #483d11;
+  border-radius: 1rem;
+}
+.borderlands-right {
   box-shadow: 4px 4px 0 0 #ffe285, 7px 7px 0 0 #483d11;
   border-radius: 1rem;
 }
@@ -27,7 +34,6 @@ body {
   background: var(--background);
 }
 
-/* Custom Tailwind height utilities above h-96 */
 .h-112 {
   height: 28rem;
 }
@@ -45,4 +51,40 @@ body {
 }
 .h-256 {
   height: 64rem;
+}
+.text-10xl {
+  font-size: 10rem; /* 160px */
+  line-height: 1;
+}
+
+.text-11xl {
+  font-size: 12rem; /* 192px */
+  line-height: 1;
+}
+
+.text-12xl {
+  font-size: 14rem; /* 224px */
+  line-height: 1;
+}
+
+.text-13xl {
+  font-size: 16rem; /* 256px */
+  line-height: 1;
+}
+
+.text-14xl {
+  font-size: 18rem; /* 288px */
+  line-height: 1;
+}
+
+.text-15xl {
+  font-size: 20rem; /* 320px */
+  line-height: 1;
+}
+.tracking-tightest {
+  letter-spacing: -0.1em;
+}
+
+.tracking-tightery {
+  letter-spacing: -0.082em;
 }
