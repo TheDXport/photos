@@ -14,20 +14,19 @@ export default function Header() {
   return (
     <div className="md:mt-14 lg:mt-0">
       {/* Top Section */}
-      <div
-        className={`flex flex-col lg:flex-row bg-[${beige}] py-4 md:py-10 gap-y-10 lg:gap-y-0 w-full overflow-x-hidden`}>
+      <div className={`flex flex-col lg:flex-row bg-[${beige}] py-4 md:py-10 gap-y-10 lg:gap-y-0 w-full`}>
         {/* Left Content */}
         <div className="flex flex-col lg:w-3/5">
           <div className={`text-[${charcoal}] space-y-7`}>
             <div className="space-y-2">
               <h1
-                className={`${SFBold.className} pl-4 sm:px-8 lg:px-10 font-bold text-8xl sm:text-[7rem] md:text-[9rem] lg:text-[7rem] xl:text-10xl sm:leading-30  tracking-tighter`}>
+                className={`${SFBold.className} pl-4 sm:px-8 lg:px-10 font-bold text-8xl sm:text-[7rem] md:text-[9rem] lg:text-[10rem] xl:text-10xl sm:leading-30  tracking-tighter`}>
                 XIN DONG
               </h1>
               <h2
                 className={`${SFMed.className} pl-4 sm:px-8 lg:px-10 text-5xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-8xl tracking-tightest space-x-4 sm:space-x-6`}>
                 <span
-                  className={`${MTBold.className} tracking-tightest md:mr-5 lg:mr-6 text-6xl sm:text-7xl md:text-[5rem] xl:text-8xl`}>
+                  className={`${MTBold.className} tracking-tightest md:mr-5 lg:mr-6 text-6xl sm:text-7xl md:text-[5rem] xl:text-[6.9rem]`}>
                   Visual
                 </span>
                 <span className="space-x-2 sm:space-x-0 ">
@@ -61,7 +60,7 @@ export default function Header() {
         </div>
 
         {/* Right Image */}
-        <div className="w-full lg:w-2/5 flex justify-center relative mt-20 hidden sm:hidden lg:block">
+        <div className="w-full lg:w-2/5 mr-10 justify-center relative  hidden sm:hidden lg:block">
           <Image
             src="/photos/Xin.png"
             alt="Xin Dong"

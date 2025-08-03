@@ -82,9 +82,9 @@ body {
   line-height: 1;
 }
 .tracking-tightest {
-  letter-spacing: -0.1em;
+  letter-spacing: -0.085em;
 }
 
 .tracking-tightery {
-  letter-spacing: -0.082em;
+  letter-spacing: -0.06em;
 }

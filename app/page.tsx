@@ -15,9 +15,10 @@ export default function Page() {
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   return (
-    <div className="relative h-full w-full items-center justify-items-center min-h-screen pb-20">
-      <div className={`transition-opacity duration-350 w-full`}>
+    <div className="relative h-200 w-full items-center justify-items-center min-h-screen pb-20">
+      <div className={`transition-opacity duration-350 w-full h-full space-y-32`}>
         <Header />
+        <Portfolio />
       </div>
     </div>
   );
