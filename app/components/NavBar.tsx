@@ -1,6 +1,4 @@
 import localFont from "next/font/local";
-// Removed next/link, using button for SPA navigation
-import { Oleo_Script_Swash_Caps } from "next/font/google";
 
 const SFPro = localFont({
   src: "../../public/fonts/SFPro.ttf",
@@ -8,12 +6,6 @@ const SFPro = localFont({
 
 const SFBold = localFont({
   src: "../../public/fonts/SFBold.ttf",
-});
-
-const OleoScript = Oleo_Script_Swash_Caps({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-oleo-script",
 });
 
 const charcoal = "#222222";

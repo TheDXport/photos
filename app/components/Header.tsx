@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
 import Image from "next/image";
 
-const SFProSemi = localFont({ src: "../../public/fonts/SFSemi.otf" });
 const SFReg = localFont({ src: "../../public/fonts/SFReg.otf" });
 const SFBold = localFont({ src: "../../public/fonts/SFBold.ttf" });
 const SFMed = localFont({ src: "../../public/fonts/SFMed.otf" });
