@@ -14,13 +14,14 @@ export default function Header() {
   return (
     <div className="md:mt-14 lg:mt-0">
       {/* Top Section */}
-      <div className={`flex flex-col lg:flex-row bg-[${beige}] py-10 gap-y-10 lg:gap-y-0 w-full overflow-x-hidden`}>
+      <div
+        className={`flex flex-col lg:flex-row bg-[${beige}] py-4 md:py-10 gap-y-10 lg:gap-y-0 w-full overflow-x-hidden`}>
         {/* Left Content */}
         <div className="flex flex-col lg:w-3/5">
           <div className={`text-[${charcoal}] space-y-7`}>
             <div className="space-y-2">
               <h1
-                className={`${SFBold.className} pl-4 sm:px-8 lg:px-10 font-bold text-7xl sm:text-[7rem] md:text-[9rem] lg:text-[7rem] xl:text-10xl sm:leading-30  tracking-tighter`}>
+                className={`${SFBold.className} pl-4 sm:px-8 lg:px-10 font-bold text-8xl sm:text-[7rem] md:text-[9rem] lg:text-[7rem] xl:text-10xl sm:leading-30  tracking-tighter`}>
                 XIN DONG
               </h1>
               <h2
