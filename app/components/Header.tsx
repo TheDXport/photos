@@ -12,7 +12,7 @@ const beige = "#EDE8D7";
 
 export default function Header() {
   return (
-    <div className="md:mt-14 lg:mt-0">
+    <div className="md:mt-14 lg:mt-0 delay-700 ">
       {/* Top Section */}
       <div className={`flex flex-col lg:flex-row bg-[${beige}] py-4 md:py-10 gap-y-10 lg:gap-y-0 w-full`}>
         {/* Left Content */}
@@ -20,11 +20,11 @@ export default function Header() {
           <div className={`text-[${charcoal}] space-y-7`}>
             <div className="space-y-2">
               <h1
-                className={`${SFBold.className} pl-4 sm:px-8 lg:px-10 font-bold text-8xl sm:text-[7rem] md:text-[9rem] lg:text-[10rem] xl:text-10xl sm:leading-30  tracking-tighter`}>
+                className={`${SFBold.className} animate-fadeIn opacity-0 pl-4 sm:px-8 lg:px-10 font-bold text-8xl sm:text-[7rem] md:text-[9rem] lg:text-[10rem] xl:text-10xl sm:leading-30  tracking-tighter `}>
                 XIN DONG
               </h1>
               <h2
-                className={`${SFMed.className} pl-4 sm:px-8 lg:px-10 text-5xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-8xl tracking-tightest space-x-4 sm:space-x-6`}>
+                className={`${SFMed.className} animate-fadeIn-h2 opacity-0 pl-4 sm:px-8 lg:px-10 text-5xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-8xl tracking-tightest space-x-4 sm:space-x-6`}>
                 <span
                   className={`${MTBold.className} tracking-tightest md:mr-5 lg:mr-6 text-6xl sm:text-7xl md:text-[5rem] xl:text-[6.9rem]`}>
                   Visual
@@ -37,8 +37,8 @@ export default function Header() {
               </h2>
             </div>
             <div
-              className={`${SFMed.className} bg-[#222222] text-[#EDE8D7] py-13 sm:py-15 md:py-16 lg:py-14 overflow-x-hidden`}>
-              <div className="tracking-tightery flex flex-col gap-y-5 pl-4 sm:px-8 lg:px-10 text-[2.7rem] sm:text-[4rem] lg:text-7xl leading-9.5 sm:leading-16 lg:leading-16 xl:leading-19  ">
+              className={`${SFMed.className} my-auto space-y-10 bg-[#222222] text-[#EDE8D7] py-13 sm:py-15 md:py-16 lg:py-16 xl:py-24 overflow-x-hidden animate-divGrow w-0`}>
+              <div className="animate-fadeInCurr opacity-0 tracking-tightery flex flex-col gap-y-5 pl-4 sm:px-8 lg:px-10 text-[2.7rem] sm:text-[4rem] lg:text-7xl xl:text-[5.5rem] leading-9.5 sm:leading-16 lg:leading-16 xl:leading-19  ">
                 <p className={``}>Currently @</p>
                 <p className={`space-x-3`}>
                   <span>NYC</span>
@@ -46,21 +46,18 @@ export default function Header() {
                   <span>Binghamton</span>
                 </p>
               </div>
-            </div>
-            <div className="flex flex-wrap pl-4 sm:px-8 lg:px-10 space-x-8">
-              <button
-                className={`bg-[#222] text-[#EDE8D7] px-6 py-3 sm:text-lg font-semibold hover:opacity-90 transition z-60`}>
-                View my work
-              </button>
-              <button className="border-2 border-[${beige}] text-[${beige}] px-6 py-3 sm:text-lg font-semibold hover:bg-[${beige}] hover:text-black transition">
-                Get in touch
-              </button>
+              <div className="flex flex-wrap pl-4 sm:px-8 lg:px-10 md:pt-5 animate-fadeIn-h2 opacity-0">
+                <button
+                  className={`${SFReg.className} tracking-wider border-2 border-[${beige}] text-[${beige}] px-6 py-3 md:px-12 md:py-4 sm:text-lg md:text-2xl font-regular hover:bg-[${beige}] hover:text-black transition`}>
+                  hello@xindong.dev
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Right Image */}
-        <div className="w-full lg:w-2/5 mr-10 justify-center relative  hidden sm:hidden lg:block">
+        <div className="w-full lg:w-2/5 mr-10 justify-center relative hidden sm:hidden lg:block opacity-0 animate-fadeIn-img">
           <Image
             src="/photos/Xin.png"
             alt="Xin Dong"

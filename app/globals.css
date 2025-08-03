@@ -1,16 +1,8 @@
-.borderlands-left {
-  box-shadow: 4px 4px 0 0 #ffe285, 7px 7px 0 0 #483d11;
-  border-radius: 1rem;
-}
-.borderlands-center {
-  box-shadow: 4px 4px 0 0 #ffe285, 0px 7px 0 0 #483d11;
-  border-radius: 1rem;
-}
-.borderlands-right {
-  box-shadow: 4px 4px 0 0 #ffe285, 7px 7px 0 0 #483d11;
-  border-radius: 1rem;
-}
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --background: #ffffff;
@@ -87,4 +79,86 @@ body {
 
 .tracking-tightery {
   letter-spacing: -0.06em;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out forwards;
+  animation-delay: 0.8s;
+}
+.animate-fadeIn-h2 {
+  animation: fadeIn 0.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInImg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animate-fadeIn-img {
+  animation: fadeInImg 0.4s ease-in-out forwards;
+  animation-delay: 1.3s;
+}
+@keyframes fadeInCurr {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animate-fadeInCurr {
+  animation: fadeInCurr 0.7s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes divGrow {
+  0% {
+    width: 0px;
+    height: 35rem;
+  }
+  100% {
+    width: 100vw;
+    height: 35rem;
+  }
+}
+
+@keyframes divGrowPhone {
+  0% {
+    width: 0px;
+    height: 21rem;
+  }
+  100% {
+    width: 100vw;
+    height: 21rem;
+  }
+}
+
+.animate-divGrow {
+  animation: divGrowPhone 0.7s ease-in forwards;
+  animation-delay: 0.5s;
+}
+
+@media (min-width: 1280px) {
+  .animate-divGrow {
+    animation: divGrow 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
 }
