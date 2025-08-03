@@ -4,6 +4,18 @@ html {
   scroll-behavior: smooth;
 }
 
+@layer utilities {
+  .invisible-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  .invisible-scrollbar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none; /* Chrome, Safari, Opera */
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -131,34 +143,52 @@ body {
 
 @keyframes divGrow {
   0% {
-    width: 0px;
-    height: 35rem;
+    width: 0vw;
+    height: 33rem;
   }
   100% {
     width: 100vw;
-    height: 35rem;
+    height: 33rem;
   }
 }
 
 @keyframes divGrowPhone {
   0% {
     width: 0px;
-    height: 21rem;
+    height: 19rem;
   }
   100% {
     width: 100vw;
-    height: 21rem;
+    height: 19rem;
+  }
+}
+
+@keyframes divGrowTab {
+  0% {
+    width: 0px;
+    height: 26rem;
+  }
+  100% {
+    width: 100vw;
+    height: 26rem;
   }
 }
 
 .animate-divGrow {
-  animation: divGrowPhone 0.7s ease-in forwards;
+  animation: divGrowPhone 0.4s ease-in forwards;
   animation-delay: 0.5s;
+}
+
+@media (min-width: 768px) {
+  .animate-divGrow {
+    animation: divGrowTab 0.6s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
 }
 
 @media (min-width: 1280px) {
   .animate-divGrow {
-    animation: divGrow 1s ease-in-out forwards;
+    animation: divGrow 0.6s ease-in-out forwards;
     animation-delay: 0.5s;
   }
 }

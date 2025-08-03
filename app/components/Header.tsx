@@ -13,13 +13,13 @@ export default function Header() {
   return (
     <div className="md:mt-14 lg:mt-0 delay-700 ">
       {/* Top Section */}
-      <div className={`flex flex-col lg:flex-row bg-[${beige}] py-4 md:py-10 gap-y-10 lg:gap-y-0 w-full`}>
+      <div className={`flex flex-col lg:flex-row bg-[${beige}] md:py-10 space-y-2 lg:gap-y-6 w-full `}>
         {/* Left Content */}
         <div className="flex flex-col lg:w-3/5">
-          <div className={`text-[${charcoal}] space-y-7`}>
+          <div className={`text-[${charcoal}] space-y-12 md:space-y-20`}>
             <div className="space-y-2">
               <h1
-                className={`${SFBold.className} animate-fadeIn opacity-0 pl-4 sm:px-8 lg:px-10 font-bold text-8xl sm:text-[7rem] md:text-[9rem] lg:text-[10rem] xl:text-10xl sm:leading-30  tracking-tighter `}>
+                className={`${SFBold.className} animate-fadeIn opacity-0 pl-4 sm:px-8 lg:px-10 mt-5 md:mt-2 lg:mt-10 font-bold text-8xl sm:text-[7rem] md:text-[9rem] lg:text-[10rem] xl:text-10xl sm:leading-30  tracking-tighter `}>
                 XIN DONG
               </h1>
               <h2
@@ -47,7 +47,7 @@ export default function Header() {
               </div>
               <div className="flex flex-wrap pl-4 sm:px-8 lg:px-10 md:pt-5 animate-fadeIn-h2 opacity-0">
                 <button
-                  className={`${SFReg.className} tracking-wider border-2 border-[${beige}] text-[${beige}] px-6 py-3 md:px-12 md:py-4 sm:text-lg md:text-2xl font-regular hover:bg-[${beige}] hover:text-black transition`}>
+                  className={`${SFReg.className} tracking-wider border-2 border-[${beige}] text-[${beige}] px-6 py-3 md:px-12 md:py-4 sm:text-lg md:text-2xl font-regular hover:bg-[${beige}] hover:-translate-y-2 hover:translate-x-2 duration-200`}>
                   hello@xindong.dev
                 </button>
               </div>
@@ -56,13 +56,14 @@ export default function Header() {
         </div>
 
         {/* Right Image */}
-        <div className="w-full lg:w-2/5 mr-10 justify-center relative hidden sm:hidden lg:block opacity-0 animate-fadeIn-img">
+        <div className="w-full lg:w-2/5 lg:h-auto xl:h-4/5  mr-10 hidden sm:hidden lg:block opacity-0 animate-fadeIn-img drop-shadow-black drop-shadow-2xl">
           <Image
             src="/photos/Xin.png"
             alt="Xin Dong"
             width={800}
-            height={1130}
+            height={1030}
             className="rounded-xl object-cover absolute min-h-full"
+            layout="responsive"
           />
         </div>
       </div>
