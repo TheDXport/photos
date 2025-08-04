@@ -178,10 +178,12 @@ html {
   0% {
     width: 0vw;
     height: 33rem;
+    opacity: 100%;
   }
   100% {
     width: 100vw;
     height: 33rem;
+    opacity: 100%;
   }
 }
 
@@ -189,10 +191,12 @@ html {
   0% {
     width: 0px;
     height: 23rem;
+    opacity: 100%;
   }
   100% {
     width: 100vw;
     height: 23rem;
+    opacity: 100%;
   }
 }
 
@@ -200,10 +204,12 @@ html {
   0% {
     width: 0px;
     height: 26rem;
+    opacity: 100%;
   }
   100% {
     width: 100vw;
     height: 26rem;
+    opacity: 100%;
   }
 }
 
