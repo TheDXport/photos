@@ -88,6 +88,8 @@ export default function Header() {
             height={1030}
             className="rounded-xl object-cover absolute min-h-full"
             layout="responsive"
+            priority
+            loading="eager"
           />
         </div>
       </div>
