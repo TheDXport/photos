@@ -57,7 +57,7 @@ export default function Header() {
               </h2>
             </div>
             <div
-              className={`${SFMed.className} my-auto space-y-10 bg-[#222222] text-[#EDE8D7] py-13 sm:py-15 md:py-16 lg:py-16 xl:py-24 overflow-x-hidden animate-divGrow w-0`}>
+              className={`${SFMed.className} my-auto space-y-10 bg-[#222222] text-[#EDE8D7] py-13 sm:py-15 md:py-16 lg:py-16 xl:py-24 animate-divGrow`}>
               <div className="animate-fadeInCurr opacity-0 tracking-tightery flex flex-col gap-y-5 pl-4 sm:px-8 lg:px-10 text-[2.7rem] sm:text-[4rem] lg:text-7xl xl:text-[5.5rem] leading-9.5 sm:leading-16 lg:leading-16 xl:leading-19  ">
                 <p className={``}>Currently @</p>
                 <p className={`space-x-3`}>

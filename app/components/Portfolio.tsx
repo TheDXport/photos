@@ -9,10 +9,10 @@ const SFProSemi = localFont({
 
 export default function Portfolio() {
   return (
-    <div className="flex flex-col items-center px-8 sm:px-12 md:px-15 lg:px-12 xl:px-15 md:mt-52 lg:mt-0 w-full  lg:h-550 xl:h-[620rem] pb-50 lg:pb-200 ">
+    <div className="flex flex-col items-center px-8 sm:px-12 md:px-15 lg:px-12 xl:px-15 md:mt-52 lg:mt-0 w-full lg:h-550 xl:h-[620rem] pb-50 lg:pb-200 ">
       {/* Blue div*/}
       <div className={`${SFProSemi.className} text-6xl w-full lg:ml-8 `}>here&#39;s some of my work ——</div>
-      <div className="flex flex-col lg:flex-row w-full z-50 xl:h-[185rem] mt-30 gap-y-12 md:space-y-0">
+      <div className="flex flex-col lg:flex-row w-full xl:h-[185rem] mt-30 gap-y-12 md:space-y-0">
         <div className="flex flex-col w-full lg:w-1/2 lg:h-20 lg:px-5 xl:px-10 items-center relative space-y-20  ">
           <FadeInImage
             src="/photos/andrewBook.jpg"

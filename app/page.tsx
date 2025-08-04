@@ -16,7 +16,7 @@ export default function Page() {
 
   return (
     <div className="relative w-full items-center justify-items-center min-h-screen overflow-x-hidden invisible-scrollbar">
-      <div className={`transition-opacity duration-350 w-full space-y-32 `}>
+      <div className={`duration-350 w-full space-y-32 `}>
         <Header />
         <Portfolio />
       </div>
